@@ -36,12 +36,8 @@ const ChatItem = ({
         position:"relative",
     }}
     >
-        {/* AVATAR CARD */}
 
         <AvatarCard avatar={avatar} />
-
-        
-        
 
 
         <Stack>

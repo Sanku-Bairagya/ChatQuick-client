@@ -10,7 +10,7 @@ import {transformImage} from "../../lib/features"
       }}>
         <Box width={"5rem"} height={"3rem"} >
           {
-            avatar.map((src,index)=>(
+            avatar?.map((src,index)=>(
               <Avatar
                 key={Math.random()*100}
                 src={transformImage(src)}

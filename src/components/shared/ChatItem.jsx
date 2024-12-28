@@ -20,7 +20,8 @@ const ChatItem = ({
     
 
   return <Link sx={{
-    padding:"0"
+    padding:"0",
+    display: "block"
   }} to={`/chat/${_id}`} onContextMenu={(e)=>handledeleteChat(e,_id,groupChat)} >
     <motion.div 
     initial={{opacity:0,y:"-100%"}}
@@ -33,6 +34,8 @@ const ChatItem = ({
         padding:"1rem",
         backgroundColor:sameSender ? "black" : "unset",
         color:sameSender? "white" : "unset",
+        width: "100%", 
+        boxSizing: "border-box", 
         position:"relative",
     }}
     >
